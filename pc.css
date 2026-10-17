@@ -1,0 +1,320 @@
+@charset "utf-8";
+
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+h1,
+h2,
+h2,
+h3,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+table {
+  border-collapse: collapse;
+  /*隣り合うセルの境界線を重ねて表示*/
+  border-spacing: 0;
+  /*境界線の間隔を無くす*/
+}
+
+img {
+  border: none;
+  display: block;
+  /* vertical-align: bottom;でも同じ効果 */
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+
+  .sp {
+    display: none;
+  }
+
+
+
+
+  /* <!-- コンテンツごとの空白（h2の上）--> */
+  .pc_same_spacing1 {
+    height: 123px;
+  }
+
+  /* <!-- コンテンツごとの空白（h2の下）--> */
+  .pc_same_spacing2 {
+    height: 60px;
+  }
+
+  header {
+    overflow: hidden;
+  }
+
+  #headerlogo img {
+    float: left;
+    width: 20%;
+    height: 52px;
+    margin-top: 30px;
+    margin-left: 13px;
+  }
+
+  #Topnav {
+    float: right;
+  }
+
+  #Topnav ul :hover {
+    text-decoration: underline #FFAC1B 2px;
+  }
+
+  #Topnav ul {
+    width: 600px;
+    margin-top: 45px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #Topnav ul li:nth-child(6) {
+    margin-top: -6px;
+  }
+
+  #btnReserve {
+    text-align: center;
+    background-color: #FFAC1B;
+    width: 108px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transform: scale(1.0);
+    transition: 0.5s;
+  }
+
+  #btnReserve:hover {
+    transform: scale(1.1);
+  }
+
+  #TopImg {
+    margin-top: 33px;
+    width: 100%;
+  }
+
+  #h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  #Concept {
+    display: flex;
+  }
+
+  #Concept_img {
+    width: 40%;
+    height: 400px;
+    margin-left: 102px;
+    border-radius: 200px;
+  }
+
+  #Concept_text {
+    margin-left: 78px;
+    padding-top: 93px;
+    font-family: "Zen Maru Gothic", sans-serif;
+
+  }
+
+  #Concept_text p:nth-child(1) {
+    font-size: 32px;
+    margin-bottom: 37px;
+
+  }
+
+  #Concept_viewmore {
+    display: block;
+    margin-top: 89px;
+    margin-left: 350px;
+    width: 103px;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+  }
+
+  #Menu_text {
+    float: left;
+    font-family: "Zen Maru Gothic", sans-serif;
+    margin-left: 121px;
+    margin-right: 58px;
+    padding-top: 118px;
+  }
+
+  #Menu_text p:nth-child(1) {
+    font-size: 32px;
+    margin-bottom: 37px;
+    margin-left: -19px;
+  }
+
+  #Menu_img {
+    float: right;
+    width: 60%;
+    height: 460px;
+    margin-right: 59px;
+    border-radius: 200px;
+  }
+
+  #Menu_viewmore {
+    display: block;
+    margin-top: 35px;
+    margin-left: 190px;
+    border-bottom: 1px solid;
+    width: 102px;
+    padding-bottom: 10px;
+  }
+
+  #pc_Gallery {
+    clear: both;
+  }
+
+  #Gallery {
+    display: flex;
+    justify-content: center;
+  }
+
+  #Gallery li:nth-child(n+2) {
+    margin-left: 10px;
+  }
+
+  .Gallery_img {
+    width: 100%;
+    height: 340px;
+    border-radius: 200px 200px 0 0;
+  }
+
+  .Gallery_text {
+    font-family: "Zen Maru Gothic", sans-serif;
+    margin-top: 37px;
+  }
+
+  #Gallery_viewmore a {
+    display: block;
+    width: 102px;
+    margin-left: auto;
+    margin-top: 84px;
+    text-align: right;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+    margin-right: 15%;
+  }
+
+  #Topics {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+  }
+
+  #Topics li span::before {
+    content: "";
+    border-left: 1px solid;
+    margin-left: 38px;
+    margin-right: 23px;
+    display: inline-block;
+    height: 25px;
+  }
+
+  .Topics_list:hover {
+    text-decoration: underline #FFAC1B 2px;
+  }
+
+  #Topics li {
+    margin-bottom: 20px;
+  }
+
+  #Topics_viewmore {
+    display: block;
+    width: 102px;
+    margin-top: 84px;
+    margin-left: auto;
+    margin-right: 15%;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+  }
+
+  #footer {
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 240px;
+  }
+
+  #footer_logo {
+    width: 30%;
+    height: 105px;
+    margin-left: 315px;
+    margin-top: 60px;
+  }
+
+  #footer_logo_btn {
+    display: flex;
+  }
+
+  #footer_btn {
+    display: flex;
+    width: 32%;
+  }
+
+  #footer_btn1 {
+    display: block;
+    font-family: "Zen Maru Gothic", sans-serif;
+    width: 157%;
+    height: 46px;
+    background-color: #FFAC1B;
+    text-align: center;
+    border-radius: 40px;
+    line-height: 2.6;
+    margin-top: 90px;
+    margin-left: 61px;
+
+  }
+
+  #footer_btn2 {
+    display: block;
+    font-family: "Zen Maru Gothic", sans-serif;
+    width: 157%;
+    height: 46px;
+    background-color: white;
+    text-align: center;
+    border-radius: 40px;
+    line-height: 2.6;
+    margin-top: 90px;
+    margin-left: 30px;
+
+  }
+
+  #footer_nav ul {
+    display: flex;
+    font-family: "Zen Maru Gothic", sans-serif;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 23px;
+    justify-content: space-between;
+
+  }
+
+
+
+
+
+}

@@ -1,0 +1,281 @@
+/* スマホ */
+@media screen and (max-width: 767px) {
+
+    .pc {
+        display: none;
+    }
+
+
+    .sp_same_spacing1 {
+        height: 53px;
+    }
+
+    .sp_same_spacing2 {
+        height: 23px;
+    }
+
+    #headerlogo {
+        width: 25%;
+        height: 28px;
+        margin: 10px;
+        float: left;
+    }
+
+    #spMenu {
+        clear: both;
+        position: absolute;
+        width: 5%;
+        height: 20px;
+        top: 1px;
+        right: 15px;
+        z-index: 10000;
+    }
+
+    #spMenu span {
+        background-color: black;
+        width: 18px;
+        height: 2px;
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transition: 0.5s;
+    }
+
+    #spMenu span:nth-child(1) {
+        top: 11px;
+    }
+
+    #spMenu span:nth-child(2) {
+        top: 17px;
+    }
+
+    #spMenu span:nth-child(3) {
+        top: 23px;
+    }
+
+    .open #spMenu span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 18px;
+    }
+
+    .open #spMenu span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .open #spMenu span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 18px;
+    }
+
+    #Topnav {
+        width: 100%;
+        height: 100vh;
+        background-color: lightgray;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        transform: translateY(-100vh);
+        transition: 0.5s;
+        z-index: 1000;
+    }
+
+    .open #Topnav {
+        transform: translateY(0);
+    }
+
+    #Topnav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #Topnav ul li {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    #TopImg {
+        display: block;
+        width: 100%;
+    }
+
+    #footer {
+        background-color: #d9d9d9;
+        width: 100%;
+        height: 150px;
+    }
+
+    #footer_logo {
+        width: 46%;
+        height: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 14px;
+    }
+
+    #footer_btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 12px;
+    }
+
+    #footer_btn1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Zen Maru Gothic", sans-serif;
+        font-size: 12px;
+        width: 33%;
+        height: 29px;
+        background-color: #FFAC1B;
+        text-align: center;
+        border-radius: 40px;
+    }
+
+    #footer_btn2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Zen Maru Gothic", sans-serif;
+        font-size: 12px;
+        width: 33%;
+        height: 29px;
+        background-color: white;
+        text-align: center;
+        border-radius: 40px;
+        margin-left: 15px;
+    }
+
+    #footer_nav ul {
+        display: flex;
+        font-family: "Zen Maru Gothic", sans-serif;
+        font-size: 12px;
+        width: 62%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 12px;
+        justify-content: space-between;
+
+    }
+
+}
+
+/* PC用 */
+
+@media screen and (min-width: 768px) {
+
+    .sp {
+        display: none;
+    }
+      header {
+    overflow: hidden;
+  }
+
+  #headerlogo img {
+    float: left;
+    width: 20%;
+    height: 52px;
+    margin-top: 30px;
+    margin-left: 13px;
+  }
+
+  #Topnav {
+    float: right;
+  }
+
+  #Topnav ul :hover {
+    text-decoration: underline #FFAC1B 2px;
+  }
+
+  #Topnav ul {
+    width: 600px;
+    margin-top: 45px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #Topnav ul li:nth-child(6) {
+    margin-top: -6px;
+  }
+
+  #btnReserve {
+    text-align: center;
+    background-color: #FFAC1B;
+    width: 108px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transform: scale(1.0);
+    transition: 0.5s;
+  }
+
+  #btnReserve:hover {
+    transform: scale(1.1);
+  }
+
+
+    #footer {
+        background-color: #d9d9d9;
+        width: 100%;
+        height: 240px;
+    }
+
+    #footer_logo {
+        width: 30%;
+        height: 105px;
+        margin-left: 315px;
+        margin-top: 60px;
+    }
+
+    #footer_logo_btn {
+        display: flex;
+    }
+
+    #footer_btn {
+        display: flex;
+        width: 32%;
+    }
+
+    #footer_btn1 {
+        display: block;
+        font-family: "Zen Maru Gothic", sans-serif;
+        width: 157%;
+        height: 46px;
+        background-color: #FFAC1B;
+        text-align: center;
+        border-radius: 40px;
+        line-height: 2.6;
+        margin-top: 90px;
+        margin-left: 61px;
+
+    }
+
+    #footer_btn2 {
+        display: block;
+        font-family: "Zen Maru Gothic", sans-serif;
+        width: 157%;
+        height: 46px;
+        background-color: white;
+        text-align: center;
+        border-radius: 40px;
+        line-height: 2.6;
+        margin-top: 90px;
+        margin-left: 30px;
+
+    }
+
+    #footer_nav ul {
+        display: flex;
+        font-family: "Zen Maru Gothic", sans-serif;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 23px;
+        justify-content: space-between;
+
+    }
+
+}

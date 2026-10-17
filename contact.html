@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="css-common.css">
+
+    <title>Enrich Your Daily Life.</title>
+</head>
+
+<body>
+    <header>
+        <div id="headerlogo">
+            <a href="HP2.html">
+                <img src="common/images/logo2.png" alt="header logo">
+            </a>
+        </div>
+        <nav id="Topnav">
+            <ul>
+                <li><a href="#">Concept</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Topics</a></li>
+                <li><a href="#">Access</a></li>
+
+                <li id="btnReserve"><a href="#">Reserve</a></li>
+            </ul>
+        </nav>
+        <div id="spMenu" class="sp">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+    <main>
+        <div class="contact-rapper">
+            <div class="contact-hero">
+                <h1 class="visually-hidden">CONTACT -お問い合わせ-</h1>
+                <div class="contact-list-rapper">
+                    <form class="contact-form" action="#" method="get">
+                        <ul class="contact-list">
+                            <li class="contact-item">
+                                <label for="name">
+                                    お名前<span class="required">必須</span>
+                                </label>
+                                <input type="text" id="name" name="name" required>
+                                <p class="error-message" id="name-error"></p>
+                            </li>
+                            <li class="contact-item">
+                                <label for="email">
+                                    メールアドレス<span class="required">必須</span>
+                                </label>
+                                <input type="email" id="email" name="email" required>
+                                <p class="error-message" id="email-error"></p>
+                            </li>
+                            <li class="contact-item">
+                                <label for="tel">
+                                    電話番号<span class="required">必須</span>
+                                </label>
+                                <input type="tel" id="tel" name="tel" required>
+                                <p class="error-message" id="tel-error"></p>
+                            </li>
+                            <li class="contact-item">
+                                <label for="message">
+                                    お問い合わせ内容<span class="required">必須</span>
+                                </label>
+                                <textarea id="message" name="message" rows="8" required></textarea>
+                                <p class="error-message" id="message-error"></p>
+                            </li>
+                            <li class="contact-item-submit">
+                                <button type="submit" class="submit-btn">送信する</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer">
+            <div id="footer_logo_btn">
+                <img id="footer_logo" src="common/images/logo2.png" alt="ロゴ">
+                <div id="footer_btn">
+                    <a id="footer_btn1" href="#">ご予約</a>
+                    <a id="footer_btn2" href="#">お問い合わせ</a>
+                </div>
+            </div>
+            <div id="footer_nav">
+                <ul>
+                    <li><a href="#">Concept</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Topics</a></li>
+                    <li><a href="#">Access</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script>
+        $(function () {
+            $("#spMenu").on("click", function () {
+                $("body").toggleClass("open");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
